@@ -32,7 +32,7 @@ public class Converter {
 
 			final String result = ByteStreams.readBytes(ais, new ToHexProcessor());
 
-			return String.format("// sample reate: %.2f Hz\n// sample size: %d bits\n// channels: %d\n\n%s\n",
+			return String.format("// sample rate: %.2f Hz\n// sample size: %d bits\n// channels: %d\n\n%s\n",
 					format.getSampleRate(), format.getSampleSizeInBits(), format.getChannels(), result);
 
 		} catch (Throwable t) {
