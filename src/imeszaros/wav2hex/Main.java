@@ -63,7 +63,7 @@ public class Main {
 			}
 		});
 
-		result = new Text(shell, SWT.BORDER | SWT.WRAP | SWT.H_SCROLL | SWT.V_SCROLL | SWT.CANCEL | SWT.MULTI);
+		result = new Text(shell, SWT.BORDER | SWT.WRAP | SWT.H_SCROLL | SWT.V_SCROLL | SWT.MULTI);
 		result.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 2, 1));
 		result.setFont(SWTResourceManager.getFont("Consolas", 10, SWT.NORMAL));
 		result.setEditable(false);
