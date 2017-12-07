@@ -47,7 +47,7 @@ public class Converter {
 		@Override
 		public boolean processBytes(byte[] buf, int off, int len) throws IOException {
 			for (int i = off, lim = off + len; i < lim; ++i) {
-				bytes.add(String.format("%02x", buf[i]));
+				bytes.add(String.format("0x%02x", buf[i]));
 			}
 
 			return true;
